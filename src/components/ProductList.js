@@ -1,8 +1,9 @@
 import React from 'react'
+import Product from './Product'
 
-
-export default function ProductList() {
+export default function ProductList(props) {
   return (
-    <div>ProductList</div>
-  )
-}
+    props.productList.map((product,i)=>{
+        return <Product product={product} key={i}/>
+    }))
+  }
