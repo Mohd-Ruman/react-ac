@@ -1,7 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
-import Navbar from './components/Navbar'
+import Navbar from './components/Navbar';
 import ProductList from './components/ProductList';
+import React,{useState} from 'react';
 
 function App() {
   const productList = [
@@ -16,6 +17,9 @@ function App() {
       quantity : 0
     }
   ]
+
+  let [productListHook , setProductList] = useState(0);
+
   return (
     <>
     <Navbar/>

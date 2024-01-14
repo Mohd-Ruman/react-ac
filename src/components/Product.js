@@ -1,6 +1,11 @@
 import React from "react";
 
 export default function product(props) {
+
+  function incrementQuantity(index){
+
+  }
+
   return (
     <>
       <div className="row">
@@ -22,7 +27,7 @@ export default function product(props) {
             <button type="button" class="btn btn-warning">
               {props.product.quantity}
             </button>
-            <button type="button" class="btn btn-success">
+            <button type="button" class="btn btn-success" onClick={this.incrementQuantity()}>
               +
             </button>
           </div>
